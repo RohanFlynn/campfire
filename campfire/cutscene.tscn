@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://dntpprc1bnynj"]
+[gd_scene load_steps=0 format=3 uid="uid://dntpprc1bnynj"]
 
 [ext_resource type="Texture2D" uid="uid://ykrpvgea2otr" path="res://sprites/Backgrounds/BG_1/Woods 2.png" id="1_bl24s"]
 [ext_resource type="Texture2D" uid="uid://duw8ohkkym6yh" path="res://sprites/Backgrounds/BG_1/Woods 1.png" id="1_ix241"]
