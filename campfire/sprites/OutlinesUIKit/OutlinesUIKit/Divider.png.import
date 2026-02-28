@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ck770udx3rm7i"
-path="res://.godot/imported/Untitled (1).png-400817a152ef9649030ca16374f56574.ctex"
+uid="uid://f1tnjdb67j07"
+path="res://.godot/imported/Divider.png-f0ec15a3c49b689d61af792f325ac249.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Untitled (1).png"
-dest_files=["res://.godot/imported/Untitled (1).png-400817a152ef9649030ca16374f56574.ctex"]
+source_file="res://sprites/OutlinesUIKit/OutlinesUIKit/Divider.png"
+dest_files=["res://.godot/imported/Divider.png-f0ec15a3c49b689d61af792f325ac249.ctex"]
 
 [params]
 

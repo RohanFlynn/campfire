@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dce0lkobu8c6g"]
+
+[ext_resource type="Script" uid="uid://qghlev0etb76" path="res://button.gd" id="1_0jsjh"]
+[ext_resource type="Texture2D" uid="uid://ru4g5y6js24b" path="res://sprites/menu.png" id="1_cpvkq"]
+[ext_resource type="Texture2D" uid="uid://cf6gpggjfd1hx" path="res://sprites/menu_hover.jpg" id="2_0jsjh"]
+
+[node name="Control" type="Control" unique_id=310837220]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="Button" type="Button" parent="." unique_id=203400928]
+layout_mode = 0
+offset_right = 176.0
+offset_bottom = 56.0
+script = ExtResource("1_0jsjh")
+
+[node name="TextureButton" type="TextureButton" parent="Button" unique_id=983281671]
+layout_mode = 0
+offset_right = 177.0
+offset_bottom = 56.0
+texture_normal = ExtResource("1_cpvkq")
+texture_pressed = ExtResource("1_cpvkq")
+texture_hover = ExtResource("2_0jsjh")
+
+[connection signal="pressed" from="Button/TextureButton" to="Button" method="_on_texture_button_pressed"]

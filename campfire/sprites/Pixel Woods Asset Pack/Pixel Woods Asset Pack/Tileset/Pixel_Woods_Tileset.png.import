@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ck770udx3rm7i"
-path="res://.godot/imported/Untitled (1).png-400817a152ef9649030ca16374f56574.ctex"
+uid="uid://01qw57tgblm0"
+path="res://.godot/imported/Pixel_Woods_Tileset.png-965204d1ef1de77247f1de223ab891b4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Untitled (1).png"
-dest_files=["res://.godot/imported/Untitled (1).png-400817a152ef9649030ca16374f56574.ctex"]
+source_file="res://sprites/Pixel Woods Asset Pack/Pixel Woods Asset Pack/Tileset/Pixel_Woods_Tileset.png"
+dest_files=["res://.godot/imported/Pixel_Woods_Tileset.png-965204d1ef1de77247f1de223ab891b4.ctex"]
 
 [params]
 

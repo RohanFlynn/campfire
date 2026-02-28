@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://cnie4jyll238k"]
+
+[ext_resource type="Script" uid="uid://dm0pjmsj17bnt" path="res://pause_menu.gd" id="1_e8sti"]
+[ext_resource type="Texture2D" uid="uid://csv7umxp0d4se" path="res://sprites/OutlinesUIKit/OutlinesUIKit/ButtonNoFill.png" id="1_hdmo1"]
+[ext_resource type="Texture2D" uid="uid://bm1f4bhxg14og" path="res://sprites/controls.png" id="2_mxa3g"]
+[ext_resource type="Texture2D" uid="uid://dv6nbs3w4ia24" path="res://sprites/controls_hover.png" id="3_e8sti"]
+[ext_resource type="Texture2D" uid="uid://db2p1tsed2kq7" path="res://sprites/resume.png" id="4_q2yj1"]
+[ext_resource type="Texture2D" uid="uid://defbi62mkvdpt" path="res://sprites/resume_hover.png" id="5_a32ks"]
+[ext_resource type="Texture2D" uid="uid://dxegqmn1wefs0" path="res://sprites/quit.png" id="6_g7dbl"]
+[ext_resource type="Texture2D" uid="uid://dmxmkttnonhdl" path="res://sprites/quit_hover.png" id="7_lv42l"]
+
+[node name="Control" type="Control" unique_id=1219808207]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_e8sti")
+
+[node name="ButtonNoFill" type="Sprite2D" parent="." unique_id=879810173]
+position = Vector2(576, 324)
+scale = Vector2(7.7000003, 4.3500004)
+texture = ExtResource("1_hdmo1")
+
+[node name="Button" type="Button" parent="." unique_id=824217578]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 256.0
+offset_right = 640.0
+offset_bottom = 320.0
+metadata/_edit_group_ = true
+
+[node name="TextureButton" type="TextureButton" parent="Button" unique_id=1667708846]
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 64.0
+texture_normal = ExtResource("2_mxa3g")
+texture_pressed = ExtResource("2_mxa3g")
+texture_hover = ExtResource("3_e8sti")
+
+[node name="Button2" type="Button" parent="." unique_id=1413395341]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 160.0
+offset_right = 640.0
+offset_bottom = 224.0
+metadata/_edit_group_ = true
+
+[node name="TextureButton" type="TextureButton" parent="Button2" unique_id=904389164]
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 64.0
+texture_normal = ExtResource("4_q2yj1")
+texture_pressed = ExtResource("4_q2yj1")
+texture_hover = ExtResource("5_a32ks")
+
+[node name="Button3" type="Button" parent="." unique_id=2146194276]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 352.0
+offset_right = 640.0
+offset_bottom = 416.0
+metadata/_edit_group_ = true
+
+[node name="TextureButton" type="TextureButton" parent="Button3" unique_id=529195563]
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 64.0
+texture_normal = ExtResource("6_g7dbl")
+texture_pressed = ExtResource("6_g7dbl")
+texture_hover = ExtResource("7_lv42l")

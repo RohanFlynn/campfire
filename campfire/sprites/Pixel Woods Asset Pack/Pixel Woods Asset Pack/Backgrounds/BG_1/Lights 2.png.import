@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ck770udx3rm7i"
-path="res://.godot/imported/Untitled (1).png-400817a152ef9649030ca16374f56574.ctex"
+uid="uid://cu0o2lqiadf0"
+path="res://.godot/imported/Lights 2.png-4b16f03bf241ffaeaa91e8dfd955b47d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Untitled (1).png"
-dest_files=["res://.godot/imported/Untitled (1).png-400817a152ef9649030ca16374f56574.ctex"]
+source_file="res://sprites/Pixel Woods Asset Pack/Pixel Woods Asset Pack/Backgrounds/BG_1/Lights 2.png"
+dest_files=["res://.godot/imported/Lights 2.png-4b16f03bf241ffaeaa91e8dfd955b47d.ctex"]
 
 [params]
 

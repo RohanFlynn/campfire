@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ck770udx3rm7i"
-path="res://.godot/imported/Untitled (1).png-400817a152ef9649030ca16374f56574.ctex"
+uid="uid://x61cisitm10r"
+path="res://.godot/imported/OutlineNoShadow.png-1c3db55d6a0cbf30a7435d8b6d4144c8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Untitled (1).png"
-dest_files=["res://.godot/imported/Untitled (1).png-400817a152ef9649030ca16374f56574.ctex"]
+source_file="res://sprites/OutlinesUIKit/OutlinesUIKit/OutlineNoShadow.png"
+dest_files=["res://.godot/imported/OutlineNoShadow.png-1c3db55d6a0cbf30a7435d8b6d4144c8.ctex"]
 
 [params]
 
