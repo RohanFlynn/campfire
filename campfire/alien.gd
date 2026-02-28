@@ -4,6 +4,7 @@ extends CharacterBody2D
 const SPEED = 300.0
 var JUMP_VELOCITY = -600.0
 @onready var asprite: AnimatedSprite2D = $AnimatedSprite2D
+@onready var tele: TextureRect = $AnimatedSprite2D/TextureRect
 var push = 1
 
 func _physics_process(delta: float) -> void:
@@ -14,8 +15,13 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("w") and is_on_floor():
 		jump()
 	if Input.is_action_pressed("c"):
-		moveob()
-
+		moveobplus()
+		tele.visible = true
+	elif Input.is_action_pressed("x"):
+		moveobminus()
+		tele.visible = true
+	else: 
+		tele.visible = false
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction := Input.get_axis("a", "d")
@@ -43,6 +49,10 @@ func animate():
 func jump():
 	velocity.y = JUMP_VELOCITY
 
-func moveob():
+func moveobplus():
 	get_tree().call_group("digle", "rot", push)
 	push += 1
+
+func moveobminus():
+	get_tree().call_group("digle", "rot", push)
+	push -= 1
