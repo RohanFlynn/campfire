@@ -17,12 +17,9 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 config/name="campfire"
 <<<<<<< HEAD
 run/main_scene="uid://4s75utjl4tg8"
-=======
-run/main_scene="uid://gu7wf3c1bqxp"
-<<<<<<< HEAD
->>>>>>> Cave-opening-
 config/features=PackedStringArray("4.6", "Mobile")
 =======
+run/main_scene="uid://gu7wf3c1bqxp"
 config/features=PackedStringArray("4.5", "Mobile")
 >>>>>>> parent of f11a7ab (fuck my life nigger)
 config/icon="res://icon.svg"
