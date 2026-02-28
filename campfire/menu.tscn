@@ -1,0 +1,109 @@
+[gd_scene format=3 uid="uid://4s75utjl4tg8"]
+
+[ext_resource type="Texture2D" uid="uid://camn8n64mmmi0" path="res://sprites/Backgrounds/BG_2/BG.png" id="1_l48gv"]
+[ext_resource type="Texture2D" uid="uid://ciu7wpqoyspn4" path="res://sprites/Backgrounds/BG_2/Fog.png" id="2_ecwwl"]
+[ext_resource type="Texture2D" uid="uid://duw8ohkkym6yh" path="res://sprites/Backgrounds/BG_1/Woods 1.png" id="3_kk3ma"]
+[ext_resource type="Texture2D" uid="uid://b01cmm52l8ntg" path="res://sprites/Backgrounds/BG_1/Lights 2.png" id="4_nrnbx"]
+[ext_resource type="Texture2D" uid="uid://be706nct8s366" path="res://sprites/Backgrounds/BG_1/Lights 1.png" id="5_iqepy"]
+[ext_resource type="Texture2D" uid="uid://ddsq2112ffbxl" path="res://sprites/start.png" id="6_h1wq0"]
+[ext_resource type="Texture2D" uid="uid://bm1f4bhxg14og" path="res://sprites/controls.png" id="6_nrnbx"]
+[ext_resource type="Texture2D" uid="uid://cmfe8rj3na2dx" path="res://sprites/start_hover.png" id="7_ecwwl"]
+[ext_resource type="Texture2D" uid="uid://dv6nbs3w4ia24" path="res://sprites/controls_hover.png" id="7_iqepy"]
+[ext_resource type="Script" uid="uid://h8ifjfypdxcp" path="res://quit.gd" id="10_dwrpx"]
+[ext_resource type="Texture2D" uid="uid://dxegqmn1wefs0" path="res://sprites/quit.png" id="10_h1wq0"]
+[ext_resource type="Texture2D" uid="uid://dmxmkttnonhdl" path="res://sprites/quit_hover.png" id="11_dwrpx"]
+
+[node name="Control" type="Control" unique_id=1107752646]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="Bg" type="Sprite2D" parent="." unique_id=1628587423]
+position = Vector2(576.00006, 324.00003)
+scale = Vector2(3.9183674, 3.6404498)
+texture = ExtResource("1_l48gv")
+metadata/_edit_lock_ = true
+metadata/_edit_group_ = true
+
+[node name="Fog" type="Sprite2D" parent="." unique_id=563838703]
+position = Vector2(575.99994, 324)
+scale = Vector2(3.9183667, 3.640449)
+texture = ExtResource("2_ecwwl")
+metadata/_edit_lock_ = true
+metadata/_edit_group_ = true
+
+[node name="Woods1" type="Sprite2D" parent="." unique_id=205874294]
+position = Vector2(576, 324)
+scale = Vector2(3.9183674, 3.6404498)
+texture = ExtResource("3_kk3ma")
+metadata/_edit_lock_ = true
+metadata/_edit_group_ = true
+
+[node name="Lights2" type="Sprite2D" parent="." unique_id=63501861]
+position = Vector2(576, 324)
+scale = Vector2(3.9183671, 3.640449)
+texture = ExtResource("4_nrnbx")
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="Lights1" type="Sprite2D" parent="." unique_id=278742581]
+position = Vector2(576, 324)
+scale = Vector2(3.9183671, 3.6404495)
+texture = ExtResource("5_iqepy")
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="Controls" type="Button" parent="." unique_id=300410685]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 384.0
+offset_right = 672.0
+offset_bottom = 448.0
+metadata/_edit_group_ = true
+
+[node name="TextureButton" type="TextureButton" parent="Controls" unique_id=2107916989]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 64.0
+texture_normal = ExtResource("6_nrnbx")
+texture_pressed = ExtResource("6_nrnbx")
+texture_hover = ExtResource("7_iqepy")
+
+[node name="Start" type="Button" parent="." unique_id=900771236]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 288.0
+offset_right = 672.0
+offset_bottom = 352.0
+metadata/_edit_group_ = true
+
+[node name="TextureButton" type="TextureButton" parent="Start" unique_id=1059916344]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 64.0
+texture_normal = ExtResource("6_h1wq0")
+texture_pressed = ExtResource("6_h1wq0")
+texture_hover = ExtResource("7_ecwwl")
+
+[node name="Quit" type="Button" parent="." unique_id=1169272237]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 480.0
+offset_right = 672.0
+offset_bottom = 544.0
+script = ExtResource("10_dwrpx")
+metadata/_edit_group_ = true
+
+[node name="TextureButton" type="TextureButton" parent="Quit" unique_id=539893826]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 64.0
+texture_normal = ExtResource("10_h1wq0")
+texture_pressed = ExtResource("10_h1wq0")
+texture_hover = ExtResource("11_dwrpx")
+
+[connection signal="pressed" from="Quit/TextureButton" to="Quit" method="_on_texture_button_pressed"]
