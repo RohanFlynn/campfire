@@ -1,4 +1,6 @@
 extends Button
 
-func _on_pause_button_pressed():
-	$"../CanvasLayer/pause_menu".open()
+@export var pause_menu: Control
+
+func _on_texture_button_pressed() -> void:
+	pause_menu.open()

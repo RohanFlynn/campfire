@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=4 uid="uid://b4gulckn3c8v8"]
+[gd_scene format=4 uid="uid://b4gulckn3c8v8"]
 
 [ext_resource type="Texture2D" uid="uid://dl6lsysujdbi4" path="res://sprites/Cave Platformer Tileset [16x16][FREE] - RottingPixels/Cave Platformer Tileset [16x16][FREE] - RottingPixels/cave-platformer-tileset-16x16.png" id="1_dpfyn"]
 
