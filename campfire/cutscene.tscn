@@ -1,0 +1,162 @@
+[gd_scene format=3 uid="uid://dntpprc1bnynj"]
+
+[ext_resource type="Texture2D" uid="uid://ykrpvgea2otr" path="res://sprites/Backgrounds/BG_1/Woods 2.png" id="1_bl24s"]
+[ext_resource type="Texture2D" uid="uid://duw8ohkkym6yh" path="res://sprites/Backgrounds/BG_1/Woods 1.png" id="1_ix241"]
+[ext_resource type="Script" uid="uid://by3daeht3415m" path="res://cutscene.gd" id="1_u4yv4"]
+[ext_resource type="Texture2D" uid="uid://ciyxovwycarkm" path="res://icon.svg" id="2_8vcau"]
+[ext_resource type="Script" uid="uid://ct5qu08s0a1bx" path="res://control.gd" id="2_u4yv4"]
+
+[sub_resource type="Gradient" id="Gradient_u4yv4"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.13803378, 0.13803375, 0.13803375, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_p30sb"]
+gradient = SubResource("Gradient_u4yv4")
+
+[sub_resource type="Gradient" id="Gradient_p30sb"]
+colors = PackedColorArray(1, 0, 0, 0.45882353, 1, 1, 1, 0.45882353)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_53jq0"]
+gradient = SubResource("Gradient_p30sb")
+
+[sub_resource type="LabelSettings" id="LabelSettings_3q24f"]
+font_size = 40
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ye5a"]
+atlas = ExtResource("2_8vcau")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qcoa3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8ye5a")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="Gradient" id="Gradient_pvbl2"]
+colors = PackedColorArray(1, 1, 1, 0.45882353, 0, 0, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_vi1t0"]
+gradient = SubResource("Gradient_pvbl2")
+
+[sub_resource type="LabelSettings" id="LabelSettings_1titf"]
+font_size = 40
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ed5nn"]
+atlas = ExtResource("2_8vcau")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5gysb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ed5nn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="cutscene" type="Control" unique_id=591281020]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_u4yv4")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1587270172]
+layout_mode = 0
+offset_right = 1150.0
+offset_bottom = 653.0
+texture = SubResource("GradientTexture2D_p30sb")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=193477957]
+layout_mode = 0
+offset_left = 4.0
+offset_top = -3.0
+offset_right = 1158.0
+offset_bottom = 654.0
+texture = ExtResource("1_bl24s")
+
+[node name="bg" type="Control" parent="." unique_id=341163484 groups=["digle"]]
+anchors_preset = 0
+offset_left = -1142.0
+offset_top = -12.0
+offset_right = -1102.0
+offset_bottom = 28.0
+script = ExtResource("2_u4yv4")
+
+[node name="TextureRect3" type="TextureRect" parent="bg" unique_id=25633821]
+layout_mode = 0
+offset_left = 1142.0
+offset_top = 12.0
+offset_right = 2291.0
+offset_bottom = 669.0
+texture = ExtResource("1_ix241")
+
+[node name="TextureRect2" type="TextureRect" parent="bg" unique_id=2054497609 groups=["digle"]]
+layout_mode = 0
+offset_right = 1149.0
+offset_bottom = 657.0
+texture = ExtResource("1_ix241")
+
+[node name="man1" type="Control" parent="." unique_id=1962339390]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_group_ = true
+
+[node name="TextureRect" type="TextureRect" parent="man1" unique_id=1653841897]
+layout_mode = 0
+offset_right = 1151.0
+offset_bottom = 125.0
+texture = SubResource("GradientTexture2D_53jq0")
+
+[node name="Label" type="Label" parent="man1" unique_id=385263544]
+layout_mode = 0
+offset_left = 138.0
+offset_right = 1153.0
+offset_bottom = 121.0
+text = "this is test text"
+label_settings = SubResource("LabelSettings_3q24f")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="man1" unique_id=2075222275]
+position = Vector2(57, 63)
+sprite_frames = SubResource("SpriteFrames_qcoa3")
+
+[node name="man2" type="Control" parent="." unique_id=677206050]
+anchors_preset = 0
+offset_left = 5.0
+offset_top = 524.0
+offset_right = 45.0
+offset_bottom = 564.0
+
+[node name="TextureRect" type="TextureRect" parent="man2" unique_id=1403690943]
+layout_mode = 0
+offset_right = 1143.0
+offset_bottom = 128.0
+texture = SubResource("GradientTexture2D_vi1t0")
+
+[node name="Label" type="Label" parent="man2" unique_id=1682792622]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 7.0
+offset_right = 1016.0
+offset_bottom = 176.0
+text = "this is test text
+"
+label_settings = SubResource("LabelSettings_1titf")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="man2" unique_id=1977907983]
+position = Vector2(1079, 63)
+sprite_frames = SubResource("SpriteFrames_5gysb")
