@@ -39,10 +39,6 @@ func animate():
 			asprite.play("walk")
 		else:	
 			asprite.play("idle")
-	elif velocity.y > 0:
-		asprite.play("jump")
-	elif velocity.y < 0:
-		asprite.play("fall")
 
 func jump():
 	velocity.y = JUMP_VELOCITY
