@@ -19,8 +19,12 @@ config/name="campfire"
 run/main_scene="uid://4s75utjl4tg8"
 =======
 run/main_scene="uid://gu7wf3c1bqxp"
+<<<<<<< HEAD
 >>>>>>> Cave-opening-
 config/features=PackedStringArray("4.6", "Mobile")
+=======
+config/features=PackedStringArray("4.5", "Mobile")
+>>>>>>> parent of f11a7ab (fuck my life nigger)
 config/icon="res://icon.svg"
 <<<<<<<HEADrun/main_scene="uid://gu7wf3c1bqxp"
 
