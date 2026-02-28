@@ -3,8 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://ykrpvgea2otr" path="res://sprites/Backgrounds/BG_1/Woods 2.png" id="1_bl24s"]
 [ext_resource type="Texture2D" uid="uid://duw8ohkkym6yh" path="res://sprites/Backgrounds/BG_1/Woods 1.png" id="1_ix241"]
 [ext_resource type="Script" uid="uid://by3daeht3415m" path="res://cutscene.gd" id="1_u4yv4"]
-[ext_resource type="Texture2D" uid="uid://ciyxovwycarkm" path="res://icon.svg" id="2_8vcau"]
 [ext_resource type="Script" uid="uid://ct5qu08s0a1bx" path="res://control.gd" id="2_u4yv4"]
+[ext_resource type="Texture2D" uid="uid://b3xc6axfyuakj" path="res://sprites/xeno-grunt/xeno-grunt/spritesheets/4x/xeno-grunt-idle.png" id="5_p30sb"]
+[ext_resource type="Texture2D" uid="uid://nmrobahrvldx" path="res://sprites/120x80_PNGSheets/_Idle.png" id="6_p30sb"]
 
 [sub_resource type="Gradient" id="Gradient_u4yv4"]
 offsets = PackedFloat32Array(0)
@@ -22,7 +23,41 @@ gradient = SubResource("Gradient_p30sb")
 [sub_resource type="LabelSettings" id="LabelSettings_3q24f"]
 font_size = 40
 
+[sub_resource type="Gradient" id="Gradient_53jq0"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.17402825, 0.17402825, 0.17402825, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_3q24f"]
+gradient = SubResource("Gradient_53jq0")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_53jq0"]
+atlas = ExtResource("5_p30sb")
+region = Rect2(0, 0, 256, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3q24f"]
+atlas = ExtResource("5_p30sb")
+region = Rect2(256, 0, 256, 256)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_qcoa3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_53jq0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3q24f")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="Gradient" id="Gradient_3q24f"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.15487596, 0.154876, 0.1548759, 0.49411765)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_8ye5a"]
+gradient = SubResource("Gradient_3q24f")
 
 [sub_resource type="Gradient" id="Gradient_pvbl2"]
 colors = PackedColorArray(1, 1, 1, 0.45882353, 0, 0, 1, 1)
@@ -33,15 +68,78 @@ gradient = SubResource("Gradient_pvbl2")
 [sub_resource type="LabelSettings" id="LabelSettings_1titf"]
 font_size = 40
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ye5a"]
+atlas = ExtResource("6_p30sb")
+region = Rect2(0, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qcoa3"]
+atlas = ExtResource("6_p30sb")
+region = Rect2(120, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pvbl2"]
+atlas = ExtResource("6_p30sb")
+region = Rect2(240, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vi1t0"]
+atlas = ExtResource("6_p30sb")
+region = Rect2(360, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1titf"]
+atlas = ExtResource("6_p30sb")
+region = Rect2(480, 0, 120, 80)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_ed5nn"]
-atlas = ExtResource("2_8vcau")
-region = Rect2(0, 0, 128, 128)
+atlas = ExtResource("6_p30sb")
+region = Rect2(600, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5gysb"]
+atlas = ExtResource("6_p30sb")
+region = Rect2(720, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l2u6u"]
+atlas = ExtResource("6_p30sb")
+region = Rect2(840, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pby01"]
+atlas = ExtResource("6_p30sb")
+region = Rect2(960, 0, 120, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jyjru"]
+atlas = ExtResource("6_p30sb")
+region = Rect2(1080, 0, 120, 80)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_5gysb"]
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_8ye5a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qcoa3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pvbl2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vi1t0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1titf")
+}, {
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_ed5nn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5gysb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l2u6u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pby01")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jyjru")
 }],
 "loop": true,
 "name": &"default",
@@ -97,7 +195,6 @@ texture = ExtResource("1_ix241")
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-metadata/_edit_group_ = true
 
 [node name="TextureRect" type="TextureRect" parent="man1" unique_id=1653841897]
 layout_mode = 0
@@ -115,9 +212,23 @@ label_settings = SubResource("LabelSettings_3q24f")
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="TextureRect2" type="TextureRect" parent="man1" unique_id=1683127662]
+layout_mode = 0
+offset_right = 131.0
+offset_bottom = 125.0
+texture = SubResource("GradientTexture2D_3q24f")
+
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="man1" unique_id=2075222275]
-position = Vector2(57, 63)
+position = Vector2(100, -30)
+scale = Vector2(1.1054688, 1.1171875)
 sprite_frames = SubResource("SpriteFrames_qcoa3")
+
+[node name="mh1" type="TextureRect" parent="man1" unique_id=1910708268]
+visible = false
+layout_mode = 0
+offset_right = 1147.0
+offset_bottom = 129.0
+texture = SubResource("GradientTexture2D_8ye5a")
 
 [node name="man2" type="Control" parent="." unique_id=677206050]
 anchors_preset = 0
@@ -134,16 +245,31 @@ texture = SubResource("GradientTexture2D_vi1t0")
 
 [node name="Label" type="Label" parent="man2" unique_id=1682792622]
 layout_mode = 0
-offset_left = -1.0
-offset_top = 7.0
-offset_right = 1016.0
-offset_bottom = 176.0
+offset_left = 10.0
+offset_top = -4.0
+offset_right = 1027.0
+offset_bottom = 165.0
 text = "this is test text
 "
 label_settings = SubResource("LabelSettings_1titf")
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="TextureRect2" type="TextureRect" parent="man2" unique_id=1058316677]
+layout_mode = 0
+offset_left = 1012.0
+offset_right = 1143.0
+offset_bottom = 125.0
+texture = SubResource("GradientTexture2D_3q24f")
+
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="man2" unique_id=1977907983]
-position = Vector2(1079, 63)
+position = Vector2(1054.8275, 5.0000067)
+scale = Vector2(-2.7676766, 3.077701)
 sprite_frames = SubResource("SpriteFrames_5gysb")
+
+[node name="mh1" type="TextureRect" parent="man2" unique_id=1047279916]
+visible = false
+layout_mode = 0
+offset_right = 1147.0
+offset_bottom = 129.0
+texture = SubResource("GradientTexture2D_8ye5a")
