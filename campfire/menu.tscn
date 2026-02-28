@@ -6,9 +6,11 @@
 [ext_resource type="Texture2D" uid="uid://b01cmm52l8ntg" path="res://sprites/Backgrounds/BG_1/Lights 2.png" id="4_nrnbx"]
 [ext_resource type="Texture2D" uid="uid://be706nct8s366" path="res://sprites/Backgrounds/BG_1/Lights 1.png" id="5_iqepy"]
 [ext_resource type="Texture2D" uid="uid://ddsq2112ffbxl" path="res://sprites/start.png" id="6_h1wq0"]
+[ext_resource type="Script" uid="uid://caoro2exqjfuu" path="res://controls.gd" id="6_jspdm"]
 [ext_resource type="Texture2D" uid="uid://bm1f4bhxg14og" path="res://sprites/controls.png" id="6_nrnbx"]
 [ext_resource type="Texture2D" uid="uid://cmfe8rj3na2dx" path="res://sprites/start_hover.png" id="7_ecwwl"]
 [ext_resource type="Texture2D" uid="uid://dv6nbs3w4ia24" path="res://sprites/controls_hover.png" id="7_iqepy"]
+[ext_resource type="Script" uid="uid://d3y78rw7uc0mt" path="res://start.gd" id="8_g7jxm"]
 [ext_resource type="Script" uid="uid://h8ifjfypdxcp" path="res://quit.gd" id="10_dwrpx"]
 [ext_resource type="Texture2D" uid="uid://dxegqmn1wefs0" path="res://sprites/quit.png" id="10_h1wq0"]
 [ext_resource type="Texture2D" uid="uid://dmxmkttnonhdl" path="res://sprites/quit_hover.png" id="11_dwrpx"]
@@ -63,6 +65,7 @@ offset_left = 480.0
 offset_top = 384.0
 offset_right = 672.0
 offset_bottom = 448.0
+script = ExtResource("6_jspdm")
 metadata/_edit_group_ = true
 
 [node name="TextureButton" type="TextureButton" parent="Controls" unique_id=2107916989]
@@ -79,6 +82,7 @@ offset_left = 480.0
 offset_top = 288.0
 offset_right = 672.0
 offset_bottom = 352.0
+script = ExtResource("8_g7jxm")
 metadata/_edit_group_ = true
 
 [node name="TextureButton" type="TextureButton" parent="Start" unique_id=1059916344]
@@ -106,4 +110,6 @@ texture_normal = ExtResource("10_h1wq0")
 texture_pressed = ExtResource("10_h1wq0")
 texture_hover = ExtResource("11_dwrpx")
 
+[connection signal="pressed" from="Controls/TextureButton" to="Controls" method="_on_texture_button_pressed"]
+[connection signal="pressed" from="Start/TextureButton" to="Start" method="_on_texture_button_pressed"]
 [connection signal="pressed" from="Quit/TextureButton" to="Quit" method="_on_texture_button_pressed"]
