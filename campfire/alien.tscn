@@ -87,6 +87,13 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="Gradient" id="Gradient_uphwn"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 1, 0, 0.5764706)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_wk2vo"]
+gradient = SubResource("Gradient_uphwn")
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7l7fe"]
 size = Vector2(83, 78)
 
@@ -96,6 +103,13 @@ script = ExtResource("1_g5epv")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2075048795]
 sprite_frames = SubResource("SpriteFrames_s37ng")
 animation = &"idle"
+
+[node name="TextureRect" type="TextureRect" parent="AnimatedSprite2D" unique_id=274331547]
+offset_left = -81.0
+offset_top = 42.0
+offset_right = 3.0
+offset_bottom = 127.0
+texture = SubResource("GradientTexture2D_wk2vo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=380127867]
 position = Vector2(-35.5, 83)
