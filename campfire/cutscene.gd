@@ -38,3 +38,5 @@ func _process(delta: float) -> void:
 				turn = true
 				mh1.visible = false
 				mh2.visible = true
+		else:
+			get_tree().change_scene_to_file("res://level.tscn")

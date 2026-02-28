@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://gu7wf3c1bqxp"]
+[gd_scene format=4 uid="uid://gu7wf3c1bqxp"]
 
 [ext_resource type="Texture2D" uid="uid://blm12q42ih6e3" path="res://sprites/BG_1/BG.png" id="1_n6hdu"]
 [ext_resource type="PackedScene" uid="uid://bu7g4hm01d4lp" path="res://player.tscn" id="1_vonw3"]
@@ -588,21 +588,21 @@ texture_region_size = Vector2i(20, 20)
 [sub_resource type="TileSet" id="TileSet_8cye3"]
 sources/2 = SubResource("TileSetAtlasSource_i2t4f")
 
-[node name="level" type="Node2D"]
+[node name="level" type="Node2D" unique_id=1254607313]
 
-[node name="Control" type="Control" parent="."]
+[node name="Control" type="Control" parent="." unique_id=1559693218]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="TextureRect2" type="TextureRect" parent="Control"]
+[node name="TextureRect2" type="TextureRect" parent="Control" unique_id=697436376]
 layout_mode = 0
 offset_right = 1146.0
 offset_bottom = 666.0
 texture = ExtResource("1_n6hdu")
 
-[node name="TextureRect3" type="TextureRect" parent="Control"]
+[node name="TextureRect3" type="TextureRect" parent="Control" unique_id=676737167]
 layout_mode = 0
 offset_left = 2.0
 offset_top = 2.0
@@ -610,13 +610,13 @@ offset_right = 1142.0
 offset_bottom = 650.0
 texture = ExtResource("2_km5ld")
 
-[node name="TextureRect5" type="TextureRect" parent="Control"]
+[node name="TextureRect5" type="TextureRect" parent="Control" unique_id=1449184936]
 layout_mode = 0
 offset_right = 1080.0
 offset_bottom = 676.0
 texture = ExtResource("3_i2t4f")
 
-[node name="TextureRect" type="TextureRect" parent="Control"]
+[node name="TextureRect" type="TextureRect" parent="Control" unique_id=181115680]
 layout_mode = 0
 offset_left = -8.0
 offset_top = 8.0
@@ -624,26 +624,26 @@ offset_right = 1126.0
 offset_bottom = 658.0
 texture = ExtResource("4_8cye3")
 
-[node name="TextureRect4" type="TextureRect" parent="Control"]
+[node name="TextureRect4" type="TextureRect" parent="Control" unique_id=1235028207]
 layout_mode = 0
 offset_right = 1122.0
 offset_bottom = 644.0
 texture = ExtResource("5_2orkt")
 
-[node name="Control" type="Control" parent="Control"]
+[node name="Control" type="Control" parent="Control" unique_id=442947538]
 anchors_preset = 0
 offset_left = 1099.0
 offset_top = -3.0
 offset_right = 1259.0
 offset_bottom = 302.0
 
-[node name="TextureRect2" type="TextureRect" parent="Control/Control"]
+[node name="TextureRect2" type="TextureRect" parent="Control/Control" unique_id=1114782515]
 layout_mode = 0
 offset_right = 1146.0
 offset_bottom = 687.0
 texture = ExtResource("1_n6hdu")
 
-[node name="TextureRect3" type="TextureRect" parent="Control/Control"]
+[node name="TextureRect3" type="TextureRect" parent="Control/Control" unique_id=729631633]
 layout_mode = 0
 offset_left = 9.0
 offset_top = 7.0
@@ -651,7 +651,7 @@ offset_right = 1123.0
 offset_bottom = 680.0
 texture = ExtResource("2_km5ld")
 
-[node name="TextureRect5" type="TextureRect" parent="Control/Control"]
+[node name="TextureRect5" type="TextureRect" parent="Control/Control" unique_id=1442305871]
 layout_mode = 0
 offset_left = -10.0
 offset_top = 16.0
@@ -659,7 +659,7 @@ offset_right = 1134.0
 offset_bottom = 687.0
 texture = ExtResource("3_i2t4f")
 
-[node name="TextureRect" type="TextureRect" parent="Control/Control"]
+[node name="TextureRect" type="TextureRect" parent="Control/Control" unique_id=898121441]
 layout_mode = 0
 offset_left = -4.0
 offset_top = -1.0
@@ -667,7 +667,7 @@ offset_right = 1149.0
 offset_bottom = 681.0
 texture = ExtResource("4_8cye3")
 
-[node name="TextureRect4" type="TextureRect" parent="Control/Control"]
+[node name="TextureRect4" type="TextureRect" parent="Control/Control" unique_id=164932290]
 layout_mode = 0
 offset_left = -90.0
 offset_top = 2.0
@@ -675,15 +675,15 @@ offset_right = 1051.0
 offset_bottom = 671.0
 texture = ExtResource("5_2orkt")
 
-[node name="Player" parent="." instance=ExtResource("1_vonw3")]
+[node name="Player" parent="." unique_id=1837824189 instance=ExtResource("1_vonw3")]
 position = Vector2(159, 251)
-scale = Vector2(0.5, 0.5)
+scale = Vector2(1, 1)
 
-[node name="TileMapLayer" type="TileMapLayer" parent="."]
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1864765172]
 scale = Vector2(3, 3)
 tile_map_data = PackedByteArray("AAAAAAsAAAACAAIAAAABAAsAAAACAAIAAAACAAsAAAACAAIAAAADAAsAAAACAAIAAAAAAA0AAAACAAoAAAABAA0AAAACAAoAAAACAA0AAAACAAoAAAADAA0AAAACAAoAAAAEAA0AAAADAAoAAAAAAAwAAAACAAIAAAABAAwAAAACAAIAAAACAAwAAAACAAIAAAADAAwAAAACAAIAAAAEAAwAAAAHAAIAAAAEAAsAAAADAAkAAAAAAAkAAAABAAEAAAABAAkAAAACAAEAAAACAAkAAAACAAEAAAADAAkAAAACAAEAAAAEAAkAAAADAAEAAAAAAAoAAAACAAIAAAABAAoAAAACAAIAAAACAAoAAAACAAIAAAAEAAoAAAADAAkAAAAFAAwAAAAFAAUAAAAGAA0AAAACAAEAAAAHAA0AAAACAAEAAAAIAA0AAAACAAEAAAAJAA0AAAACAAEAAAAKAA0AAAACAAEAAAAFAA0AAAAHAAMAAAALAA0AAAABAAIAAAANAA0AAAADAAIAAAAMAA0AAAACAAIAAAAMAA4AAAACAAIAAAALAA4AAAAJAAIAAAANAA4AAAAHAAIAAAALAAwAAAAHAAYAAAAMAAwAAAAIAAYAAAANAAwAAAAJAAYAAAALAAsAAAAHAAUAAAANAAsAAAAJAAUAAAAOAA0AAAACAAEAAAAPAA0AAAACAAEAAAAQAA0AAAACAAEAAAARAA0AAAACAAEAAAASAA0AAAAIAAMAAAATAAwAAAABAAkAAAATAAsAAAAJAAIAAAATAAoAAAAFAAUAAAAUAAoAAAACAAUAAAAVAAoAAAACAAUAAAAWAAoAAAACAAUAAAAXAAoAAAACAAUAAAAWAA0AAAAIAAEAAAAXAA0AAAAIAAEAAAATAA0AAAABAAoAAAAVAA0AAAACAAoAAAAUAA0AAAACAAoAAAAUAAwAAAACAAIAAAAUAAsAAAACAAIAAAAVAAsAAAACAAIAAAAVAAwAAAACAAIAAAAWAAsAAAACAAIAAAAWAAwAAAACAAIAAAAXAAwAAAACAAIAAAAXAAsAAAACAAIAAAAYAAoAAAACAAUAAAAZAAoAAAACAAUAAAAaAAoAAAACAAUAAAAcAAoAAAACAAUAAAAbAAoAAAACAAUAAAAdAAoAAAACAAUAAAAeAAoAAAACAAUAAAAfAAoAAAACAAUAAAAgAAoAAAACAAEAAAAaAA0AAAAIAAEAAAAcAA0AAAAIAAEAAAAbAA0AAAAIAAEAAAAYAA0AAAACAAIAAAAZAA0AAAACAAIAAAAZAAwAAAACAAIAAAAYAAwAAAACAAIAAAAZAAsAAAACAAIAAAAYAAsAAAACAAIAAAAaAAsAAAACAAIAAAAbAAsAAAACAAIAAAAbAAwAAAACAAIAAAAaAAwAAAACAAIAAAAcAAsAAAACAAIAAAAcAAwAAAACAAIAAAAdAAwAAAACAAIAAAAhAAoAAAACAAEAAAAiAAoAAAACAAEAAAAjAAoAAAACAAEAAAAkAAkAAAABAAIAAAAkAAgAAAABAAIAAAAkAAcAAAAFAAEAAAAlAAcAAAACAAEAAAAmAAcAAAACAAEAAAApAAgAAAACAA8AAAAqAAgAAAACAA8AAAAqAAkAAAACAA8AAAApAAkAAAACAA8AAAAoAAgAAAACAA8AAAAoAAkAAAACAA8AAAAoAAoAAAACAA8AAAApAAoAAAACAA8AAAAqAAoAAAACAA8AAAArAAoAAAACAA8AAAArAAkAAAACAA8AAAArAAgAAAACAA8AAAAnAAcAAAAFAAUAAAAnAAgAAAACAAIAAAAnAAkAAAADAAIAAAAnAAoAAAADAAIAAAAsAAgAAAABAAIAAAAsAAkAAAABAAIAAAAsAAoAAAABAAIAAAAsAAcAAAAFAAEAAAAoAAYAAAAHAAYAAAApAAYAAAAIAAYAAAAqAAYAAAAIAAYAAAArAAYAAAAJAAYAAAArAAUAAAAJAAUAAAAsAAQAAAAKAAQAAAAoAAUAAAAHAAUAAAAoAAcAAAACAA4AAAApAAcAAAACAA4AAAAqAAcAAAACAA4AAAArAAcAAAACAA4AAAAtAAcAAAACAAEAAAAuAAcAAAACAAEAAAAkAA0AAAACAAMAAAAlAA0AAAACAAMAAAAsAA0AAAACAAIAAAAtAA0AAAACAAIAAAAtAAgAAAACAAIAAAAuAAgAAAACAAIAAAAuAAkAAAACAAIAAAAuAAoAAAACAAIAAAAtAAoAAAACAAIAAAAtAAkAAAACAAIAAAAtAAsAAAACAAIAAAAsAAsAAAACAAIAAAAuAAsAAAACAAIAAAAuAAwAAAACAAIAAAAtAAwAAAACAAIAAAAsAAwAAAACAAIAAAArAAwAAAACAAIAAAArAA0AAAACAAIAAAAuAA0AAAACAAIAAAArAAsAAAACAAIAAAAqAAsAAAACAAIAAAAqAAwAAAACAAIAAAAqAA0AAAACAAIAAAApAAsAAAACAAIAAAApAAwAAAACAAIAAAApAA0AAAACAAIAAAAoAA0AAAACAAIAAAAoAAwAAAACAAIAAAAoAAsAAAACAAIAAAAnAA0AAAACAAIAAAAnAAwAAAACAAIAAAAnAAsAAAACAAIAAAAmAAwAAAACAAIAAAAmAAsAAAACAAIAAAAmAAoAAAACAAIAAAAmAAkAAAACAAIAAAAmAAgAAAACAAIAAAAlAAgAAAACAAIAAAAlAAkAAAACAAIAAAAlAAoAAAACAAIAAAAlAAsAAAACAAIAAAAlAAwAAAACAAIAAAAkAAwAAAACAAIAAAAkAAsAAAACAAIAAAAkAAoAAAACAAIAAAAjAAsAAAACAAIAAAAjAAwAAAACAAIAAAAjAA0AAAACAAIAAAAiAAwAAAACAAIAAAAiAAsAAAACAAIAAAAhAAwAAAACAAIAAAAhAAsAAAACAAIAAAAgAAsAAAACAAIAAAAgAAwAAAACAAIAAAAfAAwAAAACAAIAAAAfAAsAAAACAAIAAAAeAAsAAAACAAIAAAAeAAwAAAACAAIAAAAdAA0AAAACAAIAAAAdAAsAAAACAAIAAAAmAA0AAAACAAIAAAAiAA0AAAACAAIAAAAhAA0AAAACAAIAAAAgAA0AAAACAAIAAAAfAA0AAAACAAIAAAAeAA0AAAACAAIAAAA=")
 tile_set = SubResource("TileSet_h6smj")
 
-[node name="TileMapLayer2" type="TileMapLayer" parent="."]
+[node name="TileMapLayer2" type="TileMapLayer" parent="." unique_id=1387623559]
 tile_map_data = PackedByteArray("AABfABIAAgAAAAAAAABfABMAAgAAAAEAAABfABQAAgAAAAIAAABfABUAAgAAAAMAAABfABYAAgAAAAQAAABfABgAAgAAAAYAAABfABkAAgAAAAcAAABfABsAAgAAAAkAAABgABIAAgABAAAAAABgABMAAgABAAEAAABgABQAAgABAAIAAABgABUAAgABAAMAAABgABcAAgABAAUAAABgABgAAgABAAYAAABhABMAAgACAAEAAABhABQAAgACAAIAAABhABYAAgACAAQAAABhABoAAgACAAgAAABiABMAAgADAAEAAABiABUAAgADAAMAAABjABIAAgAEAAAAAABkABMAAgAFAAEAAABkAB8AAgAFAA0AAABsABsAAgANAAkAAABtABYAAgAOAAQAAABvABIAAgAQAAAAAABvABMAAgAQAAEAAABwABUAAgARAAMAAABwABcAAgARAAUAAABwABoAAgARAAgAAABwAB8AAgARAA0AAAA=")
 tile_set = SubResource("TileSet_8cye3")
