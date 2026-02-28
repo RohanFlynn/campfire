@@ -22,20 +22,7 @@ gradient = SubResource("Gradient_p30sb")
 [sub_resource type="LabelSettings" id="LabelSettings_3q24f"]
 font_size = 40
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_8ye5a"]
-atlas = ExtResource("2_8vcau")
-region = Rect2(0, 0, 128, 128)
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_qcoa3"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8ye5a")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
 
 [sub_resource type="Gradient" id="Gradient_pvbl2"]
 colors = PackedColorArray(1, 1, 1, 0.45882353, 0, 0, 1, 1)
